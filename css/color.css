@@ -30,7 +30,7 @@ ul.slimmenu li a.mPS2id-highlight,
 	background:#cfa144;
 }
 #cd-zoom-in, #cd-zoom-out,
-#contact-form-2 button:hover,
+.contact-form-bottom button:hover,
 .list-social-footer li:hover,
 #filter li .current,
 #filter li a:hover {
@@ -38,10 +38,10 @@ ul.slimmenu li a.mPS2id-highlight,
 }
 
 
-#contact-form-2 textarea:focus,
-#contact-form-2 input:focus,
-#contact-form-2 textarea:active,
-#contact-form-2 input:active {	
+.contact-form-bottom textarea:focus,
+.contact-form-bottom input:focus,
+.contact-form-bottom textarea:active,
+.contact-form-bottom input:active {	
 	border-bottom:1px solid #cfa144;
 }
 ::selection {

@@ -473,8 +473,8 @@ body.royal_preloader {
     min-width: 140px;
 }
 
-#menu-wrap .btn-contact-wrap::before {
-    display: none;
+#menu-wrap .btn-contact-wrap {
+    background-position-y: 10px;
 }
 
 #menu-wrap .btn-contact::before {
@@ -3545,7 +3545,7 @@ figure.youtube a img {
 /* #Contact form
 ================================================== */
 
-#contact-form-2 {
+.contact-form-bottom {
     width: 100%;
     font-family: 'Marta', sans-serif;
     font-size: 10px;
@@ -3556,14 +3556,14 @@ figure.youtube a img {
     position: relative;
 }
 
-#contact-form-2 label {
+.contact-form-bottom label {
     display: block;
     font-family: 'Marta', sans-serif;
     font-size: 14px;
     line-height: 30px;
 }
 
-#contact-form-2 input {
+.contact-form-bottom input {
     position: relative;
     width: calc(100% - 40px);
     padding-left: 20px;
@@ -3581,7 +3581,7 @@ figure.youtube a img {
     transition: border-bottom 0.3s, color 0.3s;
 }
 
-#contact-form-2 input.hidden {
+.contact-form-bottom input.hidden {
     height: 0;
     overflow: hidden;
     margin: 0;
@@ -3591,11 +3591,11 @@ figure.youtube a img {
     visibility: hidden;
 }
 
-#contact-form-2 input.has-error {
+.contact-form-bottom input.has-error {
     border-color: rgba(180, 0, 0, 0.5)
 }
 
-#contact-form-2 textarea {
+.contact-form-bottom textarea {
     resize: none;
     width: 100%!important;
     padding: 0;
@@ -3613,8 +3613,8 @@ figure.youtube a img {
     transition: border-bottom 0.3s, color 0.3s;
 }
 
-#contact-form-2 textarea,
-#contact-form-2 input {
+.contact-form-bottom textarea,
+.contact-form-bottom input {
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
@@ -3667,6 +3667,20 @@ figure.youtube a img {
     }
 }
 
+.form-3-wrapper {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#contact-form-3 input {
+    padding-bottom: 0;
+}
+#contact-form-3 label {
+    line-height: 20px;
+    margin-top: 10px;
+}
+
 #ajaxsuccess {
     background: #f2f2f2;
     color: #fff;
@@ -3685,78 +3699,78 @@ figure.youtube a img {
     padding-top: 10px;
 }
 
-#contact-form-2 textarea:active,
-#contact-form-2 input:active {
+.contact-form-bottom textarea:active,
+.contact-form-bottom input:active {
     color: #fff;
 }
 
-#contact-form-2 textarea:active,
-#contact-form-2 input:hover {
+.contact-form-bottom textarea:active,
+.contact-form-bottom input:hover {
     color: #fff;
 }
 
-#contact-form-2 textarea:focus,
-#contact-form-2 input:focus {
+.contact-form-bottom textarea:focus,
+.contact-form-bottom input:focus {
     outline: none !important;
 }
 
-#contact-form-2 input:-ms-input-placeholder {
+.contact-form-bottom input:-ms-input-placeholder {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
 }
 
-#contact-form-2 input::-moz-placeholder {
+.contact-form-bottom input::-moz-placeholder {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
 }
 
-#contact-form-2 input:-moz-placeholder {
+.contact-form-bottom input:-moz-placeholder {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
 }
 
-#contact-form-2 input::-webkit-input-placeholder {
+.contact-form-bottom input::-webkit-input-placeholder {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
 }
 
-#contact-form-2 textarea:-ms-input-placeholder {
+.contact-form-bottom textarea:-ms-input-placeholder {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
 }
 
-#contact-form-2 textarea::-moz-placeholder {
+.contact-form-bottom textarea::-moz-placeholder {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
 }
 
-#contact-form-2 textarea:-moz-placeholder {
+.contact-form-bottom textarea:-moz-placeholder {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
 }
 
-#contact-form-2 textarea::-webkit-input-placeholder {
+.contact-form-bottom textarea::-webkit-input-placeholder {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
 }
 
-#contact-form-2 button {
+.contact-form-bottom button {
     background: #323232;
     color: #fff;
     font-size: 13px;
@@ -3764,12 +3778,12 @@ figure.youtube a img {
     max-width: 150px;
 }
 
-#contact-form-2 button:hover {
+.contact-form-bottom button:hover {
     color: #fff;
 }
 
-#contact-form-2 button:focus,
-#contact-form-2 button:active {
+.contact-form-bottom button:focus,
+.contact-form-bottom button:active {
     border: none;
     outline: none;
 }

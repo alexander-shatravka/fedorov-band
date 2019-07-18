@@ -235,7 +235,7 @@
             slideSpeed: 500,
             paginationSpeed: 500,
             singleItem: true,
-            autoPlay: 5000
+            autoPlay: 15000
         });
 
         /* Logos Carousel */
