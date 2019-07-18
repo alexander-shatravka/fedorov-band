@@ -18,7 +18,7 @@
             text_colour: '#f8f8f8',
             background: '#212121'
         });
-    }
+    }   
 
     function initMobileMenu(){
         $(".hamburger").click(function(e) {
@@ -87,6 +87,7 @@
             e.preventDefault();
             var to = $(this).parent().parent("section").next().attr("id");
             $.mPageScroll2id("scrollTo", to);
+            $('.hamburger').removeClass('active');
         });
 
     });
