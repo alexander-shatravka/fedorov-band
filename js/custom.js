@@ -20,6 +20,18 @@
         });
     }
 
+    function initMobileMenu(){
+        $(".hamburger").click(function(e) {
+          e.preventDefault();
+          $(this).toggleClass("active");
+          $('.main-nav').toggleClass('open');
+          $('header .btn-contact').toggleClass('show');   
+        //   $('body').toggleClass('scroll-off');
+      });
+    }    
+
+    initMobileMenu()
+
 
     //Navigation	
 
@@ -29,14 +41,14 @@
             $(this).slideToggle();
         }
     });
-    $('ul.slimmenu').slimmenu({
-        resizeWidth: '1200',
-        collapserTitle: '',
-        easingEffect: 'easeInOutQuint',
-        animSpeed: 'medium',
-        indentChildren: true,
-        childrenIndenter: '&raquo;'
-    });
+    // $('ul.slimmenu').slimmenu({
+    //     resizeWidth: '1200',
+    //     collapserTitle: '',
+    //     easingEffect: 'easeInOutQuint',
+    //     animSpeed: 'medium',
+    //     indentChildren: true,
+    //     childrenIndenter: '&raquo;'
+    // });
 
 
     /* Scroll animation */
