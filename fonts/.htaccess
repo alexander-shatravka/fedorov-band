@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+
+RewriteEngine on
+
+ # Если запрашиваемый объект не папка
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+ # если запрашиваемый объект с дописанным расширением php - файл
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+ # делаем замену с дописыванием .html
+
+RewriteRule ^(.*)$ $1.html
