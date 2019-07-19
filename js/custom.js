@@ -40,6 +40,8 @@
         if ((width <= 1200)) {
             $(this).slideToggle();
         }
+        $('.hamburger').removeClass('active');
+        $('.main-nav').removeClass('open');
     });
     // $('ul.slimmenu').slimmenu({
     //     resizeWidth: '1200',
@@ -77,7 +79,7 @@
         /* Page Scroll to id fn call */
         $("ul.slimmenu li a,a[href='#top'],a[data-gal='m_PageScroll2id']").mPageScroll2id({
             highlightSelector: "ul.slimmenu li a",
-            offset: 78,
+            offset: 0,
             scrollSpeed: 800,
             scrollEasing: "easeInOutCubic"
         });
@@ -87,7 +89,6 @@
             e.preventDefault();
             var to = $(this).parent().parent("section").next().attr("id");
             $.mPageScroll2id("scrollTo", to);
-            $('.hamburger').removeClass('active');
         });
 
     });
