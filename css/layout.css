@@ -470,11 +470,12 @@ body.royal_preloader {
 #menu-wrap .btn-contact {
     background: #BB8B2E;
     padding: 6px 0 4px;
-    min-width: 140px;
+    min-width: 120px;
 }
 
 #menu-wrap .btn-contact-wrap {
     background-position-y: 10px;
+    transform: translateY(-0px);
 }
 
 #menu-wrap .btn-contact::before {
@@ -540,7 +541,7 @@ body.royal_preloader {
       margin-right: 20px;
       cursor: pointer;
       position: relative;
-      border-radius: 0;
+      border-radius: 5px;
       font-size: 16px;
   }
 
@@ -622,6 +623,12 @@ body.royal_preloader {
   }
 
   @media screen and (max-width: 768px) {
+
+    .contact-popup .btn-submit:before {
+        top: -10px;
+        bottom: -10px;
+      }    
+
     .contact-popup {
         padding: 40px 20px 40px;
         width: calc(100% - 50px);
@@ -5613,10 +5620,10 @@ No space - remove distance between list items
     }
 
     .slimmenu.main-nav li{
-        height: 60px;
+        height: 56px;
     }
 
     .slimmenu.main-nav li a{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
