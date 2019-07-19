@@ -1224,8 +1224,9 @@ ul.slimmenu.collapsed li>ul {
     font-weight: 700;
     color: #f9f9f9;
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent), url('../images/home-1.jpg') no-repeat center center;
-    background: -o-linear-gradient(transparent, transparent);
+    /* background: -webkit-linear-gradient(transparent, transparent), url('../images/home-1.jpg') no-repeat center center;
+    background: -o-linear-gradient(transparent, transparent); */
+    background-image: linear-gradient(to right top, #bb8b2e, #c9993f, #d6a84f, #e4b65f, #f2c56f);
     -webkit-background-clip: text;
     background-clip: text;
     background-position: center center;
