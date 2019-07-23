@@ -3693,6 +3693,18 @@ figure.youtube a img {
     top: 0px;
 }
 
+@media screen and (max-width: 959px) {
+
+    #owl-sep-1 .item {
+        height: 120px;
+    }
+
+    .six.columns.form-3-wrapper.bottom-form {
+        width: 100%;
+        padding-top: 70px;
+    }
+}
+
 #contact-form-3 input {
     padding-bottom: 0;
 }
@@ -5622,7 +5634,7 @@ No space - remove distance between list items
         align-items: flex-start;
         justify-content: center;
         transition: left .4s;
-        left: -100%;
+        left: -102%;
         background: #212121;
     }
 

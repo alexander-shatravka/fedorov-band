@@ -133,7 +133,7 @@
     initSeviceChoose();
 
     function initformValidation() {
-        jQuery('#btn-submit,#btn-submit-2').click(function(e) {
+        jQuery('#btn-submit,#btn-submit-2,#btn-submit-3').click(function(e) {
 
             e.preventDefault();
             var name = jQuery(this).parents('form').find('input[name=name]');
@@ -192,6 +192,16 @@
                     setTimeout(function() { jQuery('.done-massage').removeClass('done'); }, 3000);
                 },
             });
+            jQuery.ajax({ //send to amocrm 
+                type: "POST",
+                url: "send-contact.php",
+                data: form_data,
+                success: function() {
+                    // alert('Спасибо! мы свяжемся с Вами');
+                    jQuery('.done-massage').addClass('done');
+                    setTimeout(function() { jQuery('.done-massage').removeClass('done'); }, 3000);
+                },
+            });
             return false;
         })
 
@@ -205,7 +215,48 @@
             var form_data = jQuery('#contact-form-2').serialize();
             jQuery.ajax({ //telegram to admins 
                 type: "POST",
-                url: "telegram.php",
+                url: "send-contact.php",
+                data: form_data,
+                success: function() {
+                    // alert('Спасибо! мы свяжемся с Вами');
+                    jQuery('.done-massage').addClass('done');
+                    setTimeout(function() { jQuery('.done-massage').removeClass('done'); }, 3000);
+                },
+            });
+            jQuery.ajax({ //send to amocrm 
+                type: "POST",
+                url: "send-contact.php",
+                data: form_data,
+                success: function() {
+                    // alert('Спасибо! мы свяжемся с Вами');
+                    jQuery('.done-massage').addClass('done');
+                    setTimeout(function() { jQuery('.done-massage').removeClass('done'); }, 3000);
+                },
+            });
+            return false;
+        })
+
+        jQuery('#btn-submit-3').on('click', function(e) {
+            e.preventDefault();
+            initformValidation();
+            var errors = jQuery('#contact-form-3 .has-error');
+            if (errors.length) {
+                return false;
+            }
+            var form_data = jQuery('#contact-form-3').serialize();
+            jQuery.ajax({ //telegram to admins 
+                type: "POST",
+                url: "send-contact.php",
+                data: form_data,
+                success: function() {
+                    // alert('Спасибо! мы свяжемся с Вами');
+                    jQuery('.done-massage').addClass('done');
+                    setTimeout(function() { jQuery('.done-massage').removeClass('done'); }, 3000);
+                },
+            });
+            jQuery.ajax({ //send to amocrm 
+                type: "POST",
+                url: "send-contact.php",
                 data: form_data,
                 success: function() {
                     // alert('Спасибо! мы свяжемся с Вами');
