@@ -3,7 +3,7 @@
 
 
     //Preloader
-    let location = String(window.location);
+    let location = String(window.location).split('/').pop();
     Royal_Preloader.config({
         mode: 'scale_text',
         text: 'развитие вашего бизнеса',
@@ -11,14 +11,23 @@
         background: '#212121'
     });
 
-    if (location.split('/').pop() == "blog.html") {
+    if (location === "blog.html") {
         Royal_Preloader.config({
             mode: 'scale_text',
             text: 'journal',
             text_colour: '#f8f8f8',
             background: '#212121'
         });
-    }   
+    }
+    
+    if (location === "privacy-policy.html") {
+        Royal_Preloader.config({
+            mode: 'scale_text',
+            text: 'privacy policy',
+            text_colour: '#f8f8f8',
+            background: '#212121'
+        });
+    }
 
     function initMobileMenu(){
         $(".hamburger").click(function(e) {
@@ -187,9 +196,8 @@
                 url: "telegram.php",
                 data: form_data,
                 success: function() {
-                    // alert('Спасибо! мы свяжемся с Вами');
-                    jQuery('.done-massage').addClass('done');
-                    setTimeout(function() { jQuery('.done-massage').removeClass('done'); }, 3000);
+                    jQuery('.thank-massage').addClass('done');
+                    setTimeout(function() { jQuery('.thank-massage').removeClass('done'); }, 3000);
                 },
             });
             jQuery.ajax({ //send to amocrm 
@@ -197,9 +205,8 @@
                 url: "send-contact.php",
                 data: form_data,
                 success: function() {
-                    // alert('Спасибо! мы свяжемся с Вами');
-                    jQuery('.done-massage').addClass('done');
-                    setTimeout(function() { jQuery('.done-massage').removeClass('done'); }, 3000);
+                    jQuery('.thank-massage').addClass('done');
+                    setTimeout(function() { jQuery('.thank-massage').removeClass('done'); }, 3000);
                 },
             });
             return false;

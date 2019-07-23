@@ -48,11 +48,17 @@ if(isset($_POST['phone'])) {
         //     [$_POST['phone']],
         // ]);
 
-        $contact->addCustomField(304033, [
+        $contact->addCustomField(20519, [
             [$_POST['email'], 'PRIV'],
         ]);
 
+        $contact->addCustomField(20517, [
+            [$_POST['phone'], 'MOB'],
+        ]);
 
+        $contact->addCustomField(28249, [
+            [$_POST['message']],
+        ]);
 
       // Добавление нового контакта и получение его ID
       $id = $contact->apiAdd();
