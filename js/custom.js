@@ -6,7 +6,7 @@
     let location = String(window.location);
     Royal_Preloader.config({
         mode: 'scale_text',
-        text: 'стратегия вашего бизнеса',
+        text: 'развитие вашего бизнеса',
         text_colour: '#f8f8f8',
         background: '#212121'
     });

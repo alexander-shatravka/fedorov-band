@@ -35,55 +35,61 @@ Table of contents
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic);
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=devanagari,latin-ext';
-
 @font-face {
     font-family: "ALS Artemius";
     font-style: normal;
     font-weight: 500;
-    src: url("../fonts/ALSArtemius-Regular.otf") format("opentype"); }
+    src: url("../fonts/ALSArtemius-Regular.otf") format("opentype");
+}
 
 @font-face {
     font-family: "ALS Artemius";
     font-style: italic;
     font-weight: 500;
-    src: url("../fonts/ALSArtemiusSans-Italic.woff") format("woff"); }   
-    
+    src: url("../fonts/ALSArtemiusSans-Italic.woff") format("woff");
+}
+
 @font-face {
     font-family: "ALS Artemius";
     font-style: normal;
     font-weight: 800;
-    src: url("../fonts/ALSArtemiusSans-Bold.woff") format("woff"); }       
+    src: url("../fonts/ALSArtemiusSans-Bold.woff") format("woff");
+}
 
 @font-face {
     font-family: "Marta";
     font-style: normal;
     font-weight: 500;
-    src: url("../fonts/ALS\ Bingley\ Regular.otf") format("opentype"); }
+    src: url("../fonts/ALS\ Bingley\ Regular.otf") format("opentype");
+}
 
 @font-face {
     font-family: "Marta";
     font-style: italic;
     font-weight: 500;
-    src: url("../fonts/ALS\ Bingley\ Italic.otf") format("opentype"); }
+    src: url("../fonts/ALS\ Bingley\ Italic.otf") format("opentype");
+}
 
 @font-face {
     font-family: "Marta";
     font-style: normal;
     font-weight: 500;
-    src: url("../fonts/Marta_Regular.otf") format("opentype"); }
+    src: url("../fonts/Marta_Regular.otf") format("opentype");
+}
 
 @font-face {
     font-family: "Marta";
     font-style: italic;
     font-weight: 500;
-    src: url("../fonts/Marta_Italic.otf") format("opentype"); }
-    
+    src: url("../fonts/Marta_Italic.otf") format("opentype");
+}
+
 @font-face {
     font-family: "Marta";
     font-style: 700;
     font-weight: 500;
-    src: url("../fonts/Marta_Bold.otf") format("opentype"); }    
-  
+    src: url("../fonts/Marta_Bold.otf") format("opentype");
+}
 
 body.royal_preloader {
     background: none;
@@ -449,9 +455,9 @@ body.royal_preloader {
     }
 }
 
+
 /* #Popup-form
 ================================================== */
-
 
 #shadow-bg {
     position: fixed;
@@ -461,10 +467,11 @@ body.royal_preloader {
     top: 0;
     background: rgba(0, 0, 0, 0.3);
     z-index: 99;
-    display: none; 
+    display: none;
 }
+
 #shadow-bg.enable {
-    display: block; 
+    display: block;
 }
 
 #menu-wrap .btn-contact {
@@ -501,71 +508,76 @@ body.royal_preloader {
     box-shadow: 0px 10px 46px 0px rgba(0, 0, 0, 0.1);
     display: none;
     opacity: 0;
-  }
-  .contact-popup.display {
+}
+
+.contact-popup.display {
     display: block;
-  }
-  .contact-popup.opacity {
+}
+
+.contact-popup.opacity {
     opacity: 1;
-  }
-  .contact-popup h4 {
+}
+
+.contact-popup h4 {
     color: #333;
     font-size: 25px;
     margin-bottom: 30px;
     line-height: 30px;
-  }
-  .contact-popup .btn-close {
+}
+
+.contact-popup .btn-close {
     font-size: 20px;
     position: absolute;
     right: 20px;
     top: 20px;
     color: #333;
     cursor: pointer;
-  }
-  .contact-popup .form-item {
+}
+
+.contact-popup .form-item {
     width: 100%;
-  }
+}
 
-  .service-names {
-      padding: 20px 0 0;
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-  }
+.service-names {
+    padding: 20px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
 
-  .service-names li{
-      padding: 10px 20px;
-      background: #e6e6e6;
-      color: #000;
-      margin-right: 20px;
-      cursor: pointer;
-      position: relative;
-      border-radius: 0;
-      font-size: 16px;
-  }
-
-  .service-names li:hover{
+.service-names li {
+    padding: 10px 20px;
+    background: #e6e6e6;
     color: #000;
-  }
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0;
+    font-size: 16px;
+}
 
-  .service-names li.selected{
+.service-names li:hover {
+    color: #000;
+}
+
+.service-names li.selected {
     background: #C99C43;
     color: #000;
 }
 
-  .service-names li::before{
+.service-names li::before {
     border-radius: 0!important;
     left: -10px;
     top: -10px;
     bottom: -10px;
     right: -10px;
-  }
+}
 
-  .contact-popup .form-item label{
+.contact-popup .form-item label {
     color: #333333;
-  }
+}
 
-  .contact-popup .form-item input {
+.contact-popup .form-item input {
     width: 100%;
     border: 0;
     outline: 0;
@@ -575,111 +587,103 @@ body.royal_preloader {
     font-size: 14px;
     letter-spacing: 0.3px;
     color: #333;
-  }
+}
 
-  .contact-popup .form-item .hidden {
+.contact-popup .form-item .hidden {
     height: 0!important;
     overflow: hidden;
     border: 0;
     outline: 0;
     padding: 0;
     margin: 0;
-  }
+}
 
-  .contact-popup .form-item textarea {
+.contact-popup .form-item textarea {
     width: 100%;
     border: 0;
     outline: 0;
     height: 70px;
-    padding-top: 10px; 
+    padding-top: 10px;
     border-bottom: 1px solid #d5dde1;
     resize: none;
     font-family: 'Marta', Arial;
     font-size: 15px;
     letter-spacing: 0.3px;
     color: #333;
-  }
+}
 
-  .contact-popup .form-item textarea::placeholder {
+.contact-popup .form-item textarea::placeholder {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     resize: none;
-  }
+}
 
-  .contact-popup .form-item input.has-error {
+.contact-popup .form-item input.has-error {
     border-bottom: 1px solid rgba(255, 0, 0, 0.4);
-  }
+}
 
-  .contact-popup .btn-submit {
+.contact-popup .btn-submit {
     background: #333;
     color: #fff;
     margin: 35px auto 0;
-  }
+}
 
-  .contact-popup .btn-submit:hover {
+.contact-popup .btn-submit:hover {
     background: #C99C43;
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact-popup {
         padding: 40px 20px 40px;
         width: calc(100% - 50px);
         height: 420px;
     }
-
-    .service-names{
+    .service-names {
         padding-top: 10px;
     }
-
-    .service-names li{
+    .service-names li {
         padding: 6px;
         margin-right: 10px;
         letter-spacing: 0;
         font-size: 14px;
     }
-
     .contact-popup .btn-submit {
         margin: 23px auto 0;
         height: 20px;
         padding: 5px 0 10px;
     }
-
     .contact-popup .form-item input {
         height: 50px;
     }
-
     .contact-popup h4 {
         font-size: 18px;
     }
-
     .contact-popup .btn-close {
         right: 10px;
         top: 10px;
         font-size: 18px;
     }
-  }
+}
 
-  @media screen and (max-height: 600px) {
+@media screen and (max-height: 600px) {
     .contact-popup {
         padding: 10px 20px 10px;
         width: calc(100% - 50px);
         height: 300px;
     }
-
     .contact-popup .form-item input {
         height: 40px;
     }
-
     .contact-popup h4 {
         font-size: 18px;
     }
-
     .contact-popup .btn-submit {
         padding: 7px 30px;
         margin: 20px auto;
     }
-  }
+}
+
 
 /* #Navigation
 ================================================== */
@@ -995,7 +999,7 @@ ul.slimmenu.collapsed li>ul {
     width: 100%;
 }
 
-.section.section-clients{
+.section.section-clients {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -1031,15 +1035,15 @@ ul.slimmenu.collapsed li>ul {
 }
 
 .back-dark {
-    background-color: #212121;
+    background-color: #242b32;
 }
 
 .back-dark3 {
-    background-color: #303030;
+    background-color: #242b32;
 }
 
 .back-dark2 {
-    background-color: #181818;
+    background-color: #161e23;
 }
 
 .back-dark1 {
@@ -1108,11 +1112,9 @@ ul.slimmenu.collapsed li>ul {
 }
 
 @media screen and (max-width: 600px) {
-
     .title-text.left p span {
         padding-left: 60px;
     }
-
     .title-text.left p span:before {
         width: 35px;
         left: 10px;
@@ -1514,7 +1516,7 @@ svg * {
 }
 
 @media screen and (max-width: 768px) {
-    .counter-wrapper .three.columns{
+    .counter-wrapper .three.columns {
         width: 50%!important;
     }
 }
@@ -2392,6 +2394,7 @@ figure.youtube a img {
     margin: 0 auto;
     text-align: center;
 }
+
 @media only screen and (max-width: 768px) {
     #owl-logos .item img {
         width: 100px;
@@ -3155,13 +3158,12 @@ figure.youtube a img {
 }
 
 @media (max-width: 400px) {
-    .journal-wrap, .journal-wrap-right {
-       margin-bottom: 90px;
+    .journal-wrap,
+    .journal-wrap-right {
+        margin-bottom: 90px;
     }
-
     .journal-det h5 {
         padding-bottom: 0;
-        
     }
 }
 
@@ -3437,15 +3439,16 @@ figure.youtube a img {
     padding-bottom: 30px;
 }
 
-.contact-det a{
+.contact-det a {
     color: #f1f1f1;
     transition: 0.3s color;
 }
-.contact-det a:hover{
+
+.contact-det a:hover {
     color: #C99C43;
 }
 
-.contact-det a:hover h6{
+.contact-det a:hover h6 {
     color: #C99C43!important;
 }
 
@@ -3636,18 +3639,19 @@ figure.youtube a img {
     bottom: 0;
     height: 14px;
     width: 100px!important;
-    padding: 10px;  
+    padding: 10px;
     cursor: pointer;
     font-size: 14px;
 }
-.bottom-form .btn-submit::before{
+
+.bottom-form .btn-submit::before {
     left: -10px;
     right: -10px;
     top: -10px;
     bottom: -10px;
 }
 
-.bottom-form .btn-submit:hover { 
+.bottom-form .btn-submit:hover {
     background: #C99C43;
 }
 
@@ -3676,6 +3680,7 @@ figure.youtube a img {
 #contact-form-3 input {
     padding-bottom: 0;
 }
+
 #contact-form-3 label {
     line-height: 20px;
     margin-top: 10px;
@@ -4104,7 +4109,7 @@ figure.youtube a img {
 @media only screen and (max-width: 1200px) {
     .logo {
         width: 60px;
-        height:60px;
+        height: 60px;
         left: 0px;
         top: 10px;
         background-size: 60px 60px;
@@ -4273,12 +4278,10 @@ figure.youtube a img {
     .portfolio-box-1 {
         width: 100%;
     }
-
     .about-wrap h5 {
         padding-top: 15px;
         text-transform: capitalize;
     }
-
     .pricing-plan {
         padding: 45px 45px 120px 45px;
     }
@@ -5455,7 +5458,6 @@ No space - remove distance between list items
 }
 
 .link-tag a:hover {}
-
 
 .skills-descr {
     margin-bottom: 40px;
