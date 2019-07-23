@@ -18,7 +18,19 @@
             text_colour: '#f8f8f8',
             background: '#212121'
         });
-    }
+    }   
+
+    function initMobileMenu(){
+        $(".hamburger").click(function(e) {
+          e.preventDefault();
+          $(this).toggleClass("active");
+          $('.main-nav').toggleClass('open');
+          $('header .btn-contact').toggleClass('show');   
+        //   $('body').toggleClass('scroll-off');
+      });
+    }    
+
+    initMobileMenu()
 
 
     //Navigation	
@@ -28,15 +40,17 @@
         if ((width <= 1200)) {
             $(this).slideToggle();
         }
+        $('.hamburger').removeClass('active');
+        $('.main-nav').removeClass('open');
     });
-    $('ul.slimmenu').slimmenu({
-        resizeWidth: '1200',
-        collapserTitle: '',
-        easingEffect: 'easeInOutQuint',
-        animSpeed: 'medium',
-        indentChildren: true,
-        childrenIndenter: '&raquo;'
-    });
+    // $('ul.slimmenu').slimmenu({
+    //     resizeWidth: '1200',
+    //     collapserTitle: '',
+    //     easingEffect: 'easeInOutQuint',
+    //     animSpeed: 'medium',
+    //     indentChildren: true,
+    //     childrenIndenter: '&raquo;'
+    // });
 
 
     /* Scroll animation */
@@ -65,7 +79,7 @@
         /* Page Scroll to id fn call */
         $("ul.slimmenu li a,a[href='#top'],a[data-gal='m_PageScroll2id']").mPageScroll2id({
             highlightSelector: "ul.slimmenu li a",
-            offset: 78,
+            offset: 0,
             scrollSpeed: 800,
             scrollEasing: "easeInOutCubic"
         });

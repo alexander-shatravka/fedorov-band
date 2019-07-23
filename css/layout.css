@@ -466,8 +466,8 @@ body.royal_preloader {
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.3);
-    z-index: 99;
-    display: none;
+    z-index: 999;
+    display: none; 
 }
 
 #shadow-bg.enable {
@@ -477,11 +477,12 @@ body.royal_preloader {
 #menu-wrap .btn-contact {
     background: #BB8B2E;
     padding: 6px 0 4px;
-    min-width: 140px;
+    min-width: 120px;
 }
 
 #menu-wrap .btn-contact-wrap {
     background-position-y: 10px;
+    transform: translateY(-0px);
 }
 
 #menu-wrap .btn-contact::before {
@@ -504,7 +505,7 @@ body.royal_preloader {
     transform: translate(-50%, -50%);
     height: 460px;
     width: 500px;
-    z-index: 99;
+    z-index: 999;
     box-shadow: 0px 10px 46px 0px rgba(0, 0, 0, 0.1);
     display: none;
     opacity: 0;
@@ -538,16 +539,25 @@ body.royal_preloader {
     width: 100%;
 }
 
-.service-names {
-    padding: 20px 0 0;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
+  .service-names {
+      padding: 20px 0 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+  }
 
-.service-names li {
-    padding: 10px 20px;
-    background: #e6e6e6;
+  .service-names li{
+      padding: 10px 20px;
+      background: #e6e6e6;
+      color: #000;
+      margin-right: 20px;
+      cursor: pointer;
+      position: relative;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+
+  .service-names li:hover{
     color: #000;
     margin-right: 20px;
     cursor: pointer;
@@ -634,6 +644,11 @@ body.royal_preloader {
 }
 
 @media screen and (max-width: 768px) {
+
+    .contact-popup .btn-submit:before {
+        top: -10px;
+        bottom: -10px;
+      }  
     .contact-popup {
         padding: 40px 20px 40px;
         width: calc(100% - 50px);
@@ -1219,8 +1234,9 @@ ul.slimmenu.collapsed li>ul {
     font-weight: 700;
     color: #f9f9f9;
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent), url('../images/home-1.jpg') no-repeat center center;
-    background: -o-linear-gradient(transparent, transparent);
+    /* background: -webkit-linear-gradient(transparent, transparent), url('../images/home-1.jpg') no-repeat center center;
+    background: -o-linear-gradient(transparent, transparent); */
+    background-image: linear-gradient(to right top, #bb8b2e, #c9993f, #d6a84f, #e4b65f, #f2c56f);
     -webkit-background-clip: text;
     background-clip: text;
     background-position: center center;
@@ -3819,7 +3835,7 @@ figure.youtube a img {
 
 .button--moema {
     padding: 16px 30px;
-    border-radius: 50px;
+    border-radius: 5px;
     text-align: center;
     background: #fff;
     letter-spacing: 2px;
@@ -3836,7 +3852,7 @@ figure.youtube a img {
     bottom: -20px;
     right: -20px;
     background: inherit;
-    border-radius: 50px;
+    border-radius: 20px;
     z-index: -1;
     opacity: 0.4;
     -webkit-transform: scale3d(0.8, 0.5, 1);
@@ -4144,6 +4160,7 @@ figure.youtube a img {
         width: 100%;
         text-align: right;
     }
+
     .home-text h1 {
         font-size: 60px;
         line-height: 65px;
@@ -5481,5 +5498,143 @@ No space - remove distance between list items
     .skills-descr {
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+}
+
+.contact-mobile {
+    display: none;
+}
+
+.hamburger {
+    position: absolute;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+    display: none;
+    top: 28px;}
+    @media (max-width: 767px) {
+      .hamburger {
+        display: block; } }
+  
+  .line {
+    width: 26px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 4px auto;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    opacity: 1;
+    -webkit-border-radius: 1.5px;
+            border-radius: 1.5px; }
+  
+  .header-dark .line {
+    background: #fff; }
+  
+  #ham-3.active .line:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+        -ms-transform: translateY(6px) rotate(45deg);
+            transform: translateY(6px) rotate(45deg); }
+  
+  #ham-3.active .line:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    opacity: 0; }
+  
+  #ham-3 .line:nth-child(3) {
+    width: 18px;
+    -webkit-transform: translateX(-4px);
+        -ms-transform: translateX(-4px);
+            transform: translateX(-4px); }
+  
+  #ham-3.active .line:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+    width: 26px; }
+
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        left: 30px;
+    }
+
+    #menu-wrap {
+        box-sizing: border-box;
+        height: 80px;
+        background: #212121;
+        z-index: 99;
+    }
+
+    #menu-wrap .btn-contact-wrap {
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+        left: 0;
+    }
+    #menu-wrap .btn-contact-wrap .btn-contact{
+        min-width: 100vw;
+        margin: 0;
+        height: 60px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    #menu-wrap .container{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #menu-wrap .contact-mobile {
+        display: block;
+        max-width: 50px;
+        position: absolute;
+        right: 70px;
+        top: 25px;
+        min-width: 100px;
+        width: 100px;
+        letter-spacing: 0.2px;
+    }
+
+    #menu-wrap .btn-contact.contact-mobile::before{
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+    }
+
+    .slimmenu.main-nav {
+        margin-top: 0;
+        padding-top: 0;
+        position: absolute;
+        top: 79px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        display: flex!important;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+        transition: left .4s;
+        left: -100%;
+        background: #212121;
+    }
+
+    .slimmenu.main-nav.open {
+        left: 0;
+    }
+
+    .slimmenu.main-nav li{
+        height: 56px;
+    }
+
+    .slimmenu.main-nav li a{
+        font-size: 15px;
     }
 }
