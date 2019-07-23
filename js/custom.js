@@ -29,6 +29,14 @@
         });
     }
 
+    function initPrivacyPolicy(){
+        $('.btn-agree-policy').click(function(){
+            $(this).parents('.privacy-policy').removeClass('show');
+            localStorage['policy'] = 'agree';	
+        })
+    }
+    initPrivacyPolicy();
+
     function initMobileMenu(){
         $(".hamburger").click(function(e) {
           e.preventDefault();

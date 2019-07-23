@@ -657,7 +657,7 @@ body.royal_preloader {
     .contact-popup {
         padding: 40px 20px 40px;
         width: calc(100% - 50px);
-        height: 420px;
+        height: 450px;
     }
     .service-names {
         padding-top: 10px;
@@ -5069,7 +5069,7 @@ No space - remove distance between list items
 
 .post h2 {
     font-size: 24px;
-    margin: 20px;
+    margin: 30px 0 30px;
     text-align: left;
     line-height: 1.2;
 }
@@ -5083,7 +5083,7 @@ No space - remove distance between list items
 }
 
 .post.pp li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     padding-left: 15px;
 }
@@ -5709,5 +5709,72 @@ No space - remove distance between list items
 
     .slimmenu.main-nav li a{
         font-size: 15px;
+    }
+}
+
+.privacy-policy {
+    display: none;
+    z-index: 99999;
+    background: rgba(38, 38, 38, .9);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding-bottom: 30px;
+}
+.privacy-policy.show {
+    display: block;
+}
+
+.privacy-policy p{
+    width: 80%;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.privacy-policy p a{
+    color: #bb8b2e;
+}
+
+.privacy-policy .button--moema{
+    max-width: 100px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .privacy-policy {
+        height: 200px;
+        padding-bottom: 70px;
+    }
+
+    .privacy-policy p{
+        width: 100%;    
+    }
+
+    .privacy-policy .button--moema{
+        box-sizing: border-box;
+        height: 30px;
+        width: 150px;
+        max-width: 150px;
+        line-height: 26px;
+        padding: 0;
+        bottom: -30px;
+        top: auto;
+        left: 50%;
+        margin-left: -75px;
+    }
+
+    .privacy-policy .button--moema::before {
+        left: -10px;
+        top: -10px;
+        bottom: -10px;
+        right: -10px;
     }
 }
