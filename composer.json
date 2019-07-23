@@ -1,0 +1,12 @@
+{
+    "name": "alexander/fedorov-band",
+    "authors": [
+        {
+            "name": "Alexander Shatravka",
+            "email": "shatravgo2@gmail.com"
+        }
+    ],
+    "require": {
+        "dotzero/amocrm": "^0.3.28"
+    }
+}
