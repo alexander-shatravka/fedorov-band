@@ -5074,6 +5074,12 @@ No space - remove distance between list items
     line-height: 1.2;
 }
 
+.columns-pp {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 15px;
+}
+
 .post.pp li{
     font-weight: 200;
 }
