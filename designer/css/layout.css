@@ -427,9 +427,6 @@ ul.slimmenu li ul {
 
 
 
-
-
-
 .logo{
 	position: absolute;
     width: 100px;
@@ -3447,25 +3444,8 @@ ul.slimmenu li > ul {
 .footer-top{
 	position:relative;
 	text-align:center;
-	margin:0 auto;
-}  
-.footer-top img{
-	text-align:center;
-	margin:0 auto;
+	}
 }
-.social-footer{ 
-	text-align:center;
-	margin:0 auto;
-	float:none;
-	padding-top:10px;
-	padding-bottom:10px;
-}
-.list-social-footer li {
-    margin-left:2px;
-	margin-right:2px;
-}
-}
-
 
 
 

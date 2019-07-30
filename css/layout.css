@@ -5784,3 +5784,82 @@ No space - remove distance between list items
         right: -10px;
     }
 }
+
+.header-light ul li a{
+    color: #333;
+}
+
+.header-light.cbp-af-header-shrink ul li a{
+    color: #fff;
+}
+
+
+#checkbox-form {
+	padding-top: 300px;
+	position: relative;
+    text-align: left;color: #333;
+}
+
+.checkbox-block {
+    margin-bottom: 50px;
+}
+
+.checkbox-block h6{
+    text-align: left;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 18px;
+}
+
+.checkbox-block .form-row {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkbox-block .form-row input[type='checkbox']{
+    max-width: 20px;
+    order: 0;
+    margin-right: 20px;
+}
+
+.checkbox-block .form-row label {
+    order: 1;
+}
+
+#checkbox-form  textarea {
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #000;
+    resize: none;
+    width: 100%;
+    order: 2;
+    background: transparent;
+    outline: none;
+    color: #333;
+    margin-top: 30px;
+    height: 50px;
+}
+
+#checkbox-form  textarea:focus {
+    border-color: #BB8B2E;
+}
+
+
+
+#checkbox-form textarea::-webkit-input-placeholder {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #000;
+    resize: none;
+    width: 100%;
+    order: 2;
+    background: transparent;
+    outline: none;
+    color: #333;
+}
