@@ -1028,6 +1028,28 @@ ul.slimmenu.collapsed li>ul {
     height: 100vh;
 }
 
+.full-height.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0 10px;   
+    box-sizing: border-box;
+}
+
+.full-height.not-found .button--moema{
+    margin-top: 50px;
+}
+
+.full-height.not-found h6{
+    margin-top: 30px;
+}
+
+.full-height.not-found .button--moema{
+    
+}
+
 .padding-top-bottom {
     padding-top: 120px;
     padding-bottom: 120px;
