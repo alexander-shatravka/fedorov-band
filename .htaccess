@@ -1,3 +1,4 @@
+ErrorDocument 404 / err404.php
 
 RewriteEngine On
 
