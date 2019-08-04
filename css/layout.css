@@ -5833,6 +5833,11 @@ No space - remove distance between list items
     font-size: 18px;
 }
 
+.checkbox-block h6 b{
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .checkbox-block .form-row {
     display: flex;
     flex-direction: column;
@@ -5933,13 +5938,13 @@ No space - remove distance between list items
     left: 0;
     height: 18px;
     width: 18px;
-    background-color: #eee;
+    background-color: #e9e9e9;
     transition: background-color 0.5s;
   }
   
   /* On mouse-over, add a grey background color */
   .checkbox-container:hover input ~ .checkmark {
-    background-color: #e5e5e5;
+    background-color: #e2e2e2;
   }
   
   /* When the checkbox is checked, add a blue background */
