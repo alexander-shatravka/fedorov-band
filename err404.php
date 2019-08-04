@@ -47,8 +47,6 @@
 
 <body class="royal_preloader">
 
-    <div id="royal_preloader"></div>
-
     <div class="privacy-policy">
         <div class="container">
             <div class="twelve columns">
