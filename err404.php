@@ -45,7 +45,7 @@
 
 </head>
 
-<body class="royal_preloader">
+<body class="">
 
     <div class="privacy-policy">
         <div class="container">
